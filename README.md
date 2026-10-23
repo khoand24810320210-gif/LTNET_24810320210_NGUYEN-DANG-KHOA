@@ -10,48 +10,43 @@
 ---
 
 ## II. DANH SÁCH BÀI TẬP HOÀN THÀNH & TỰ ĐÁNH GIÁ
-| **Bài 1** | Quản lý Dịch vụ Phòng Gym & Hội viên | Hoàn thành | 100% |
-| **Bài 2** | Báo cáo & Lưu trữ Tài liệu Nhà sách | Hoàn thành | 100% |
-| **Bài 3** | Hệ thống MDI Quản lý Bệnh viện & Async | Hoàn thành | 90% |
+| **Bài 1** | QUẢN LÝ ĐẶT PHÒNG KHÁCH SẠN (DATA BINDING 2 CHIỀU &VALIDATION) | Hoàn thành | 100% |
+| **Bài 2** | QUẢN LÝ HỒ SƠ NHÂN SỰ & THÔNG TIN LƯƠNG (SYSTEMDIALOGS & FILE I/O)| Hoàn thành | 100% |
+| **Bài 3** | HỆ THỐNG MDI QUẢN LÝ TRƯỜNG HỌC & ĐÀO TẠO (KIẾN TRÚC MDI) | Hoàn thành | 100% |
+| **Bài 4** | BẢNG ĐIỀU KHIỂN TỔNG HỢP BÁO CÁO KHO HÀNG(ASYNC/AWAIT & KHÔNG KHÓA UI) | Hoàn thành | 100% |
+| **Bài 5** | MÔ PHỎNG GIÁM SÁT HỆ THỐNG CẢNH BÁO IOT REAL-TIME(CROSS-THREAD SAFETY & PROCESSSING) | Hoàn thành | 100% |
 
 ---
 
 ## III. MINH HỌA GIAO DIỆN & KỸ THUẬT NỔI BẬT
-## III. MINH HỌA GIAO DIỆN & KỸ THUẬT NỔI BẬT
 
-### 1. Bài 1: Quản lý Dịch vụ Phòng Gym & Hội viên
-* **Kỹ thuật áp dụng:** Cấu hình DataGridView bằng code (`AutoGenerateColumns =
-false`), Data Binding 2 chiều với `BindingSource`, Validation với `ErrorProvider`.
+### 1. Bài 1: QUẢN LÝ ĐẶT PHÒNG KHÁCH SẠN (DATA BINDING 2 CHIỀU &VALIDATION)
 * **Hình ảnh minh họa Giao diện:**
 
-![Giao diện chính Bài 1](docs/bai1_main.png)
-*Mô tả: Giao diện chính hiển thị DataGridView và đồng bộ dữ liệu 2 chiều lên các
-TextBox.*
+![Giao diện chính Bài 1](<img width="1347" height="920" alt="bai1_main" src="https://github.com/user-attachments/assets/74a6a265-1142-4949-910d-5c834e04598d" />
+)
 
-![Bắt lỗi Validation Bài 1](docs/bai1_error.png)
-*Mô tả: Kiểm tra hợp lệ dữ liệu nhập vào bằng ErrorProvider khi nhấn Thêm mới.*
+
+![Bắt lỗi Validation Bài 1](<img width="1346" height="921" alt="bai1_error" src="https://github.com/user-attachments/assets/a5c818d2-1e19-4fdc-9891-83b1836491b1" />)
+
+### 2. Bài 2: QUẢN LÝ HỒ SƠ NHÂN SỰ & THÔNG TIN LƯƠNG (SYSTEMDIALOGS & FILE I/O)
+
+* **Hình ảnh minh họa Giao diện:**
+
+![Giao diện Bài 2 và Load Ảnh](<img width="1170" height="792" alt="bai2_main" src="https://github.com/user-attachments/assets/0f81cd1a-8d3a-4d2f-876e-d581cfdfbaa0" />
+)
+
 
 ---
 
-### 2. Bài 2: Quản lý & Xuất Báo cáo Nhà sách
-* **Kỹ thuật áp dụng:** `OpenFileDialog` (Tải ảnh bìa), `SaveFileDialog` /
-`OpenFileDialog` (Đọc/Ghi file CSV), Cập nhật `StatusStrip` theo thời gian thực.
+### 3. Bài 3:  HỆ THỐNG MDI QUẢN LÝ TRƯỜNG HỌC & ĐÀO TẠO (KIẾN TRÚC MDI)
+
 * **Hình ảnh minh họa Giao diện:**
 
-![Giao diện Bài 2 và Load Ảnh](docs/bai2_main.png)
-*Mô tả: Chọn ảnh bìa sách từ đĩa cứng hiển thị lên PictureBox và nạp dữ liệu từ file
-CSV.*
+![Giao diện Khung MDI](<img width="995" height="637" alt="bai2_csv" src="https://github.com/user-attachments/assets/5254fc53-5692-497c-be72-fbacb6c2f8e0" />
+)
+| **Bài 4** | BẢNG ĐIỀU KHIỂN TỔNG HỢP BÁO CÁO KHO HÀNG(ASYNC/AWAIT & KHÔNG KHÓA UI)
+<img width="881" height="573" alt="bai4_async" src="https://github.com/user-attachments/assets/644fb568-e0d1-4e64-bf82-c71454abc259" />
 
----
-
-### 3. Bài 3: Kiến trúc MDI & Xử lý Bất đồng bộ (Async/Await)
-* **Kỹ thuật áp dụng:** MDI Container, Quản lý chống mở trùng Form con,
-`async/await` chống treo UI, Safe Cross-Thread bằng `this.Invoke()`.
-* **Hình ảnh minh họa Giao diện:**
-
-![Giao diện Khung MDI](docs/bai3_mdi.png)
-*Mô tả: Khung Form cha MDI điều khiển mở các Form con xếp tầng.*
-
-![Minh họa Async không treo UI](docs/bai3_async.png)
-*Mô tả: Tiến trình ngầm chạy tải dữ liệu nặng 5 giây, giao diện vẫn kéo rê và thao tác
-bình thường.*
+| **Bài 5** | MÔ PHỎNG GIÁM SÁT HỆ THỐNG CẢNH BÁO IOT REAL-TIME(CROSS-THREAD SAFETY & PROCESSSING)
+<img width="1905" height="560" alt="main5" src="https://github.com/user-attachments/assets/dd849f51-26fe-4ef5-9580-608c04531117" />
